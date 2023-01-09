@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "singularName": "employee",
+    "pluralName": "employees",
+    "displayName": "Employee",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Names": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "StartDate": {
+      "type": "date"
+    },
+    "DepartmentId": {
+      "type": "integer",
+      "required": true,
+      "unique": false
+    },
+    "employeeId": {
+      "type": "uid",
+      "targetField": "Names",
+      "required": true
+    }
+  }
+}

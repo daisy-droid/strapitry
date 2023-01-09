@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registers",
+  "info": {
+    "singularName": "register",
+    "pluralName": "registers",
+    "displayName": "register",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Names": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "unique": true,
+      "required": true
+    },
+    "TimeIn": {
+      "type": "datetime"
+    },
+    "onTime": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
